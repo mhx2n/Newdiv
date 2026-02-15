@@ -1,0 +1,618 @@
+---- EXTERNAL CSS #1 (URL: https://sspathshala.pages.dev/https:/css/index.css) ----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Pathshala-Exam website</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="../assets/favicon-70x70.png" sizes="70x70">
+    <link rel="icon" href="../assets/favicon-96x96.png" sizes="96x96">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/set-modal.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+
+
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="exam-header">
+            <div class="header-card">
+                <h1>SS PATHSHALA</h1>
+                <p>Your academic and admission solution.</p>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" aria-label="Toggle Dark Mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z" class="moon"/>
+                            <circle cx="12" cy="12" r="5" class="sun"/>
+                        </svg>
+                        <span>Toggle Theme</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification System -->
+        <div class="notification-wrapper">
+            <button class="notification-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="notification-icon">
+                    <path d="M18 8c0-3.313-2.687-6-6-6s-6 2.687-6 6v5l-1 2v1h14v-1l-1-2V8z"></path>
+                    <path d="M9 21h6a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2z"></path>
+                </svg>
+                <span class="notification-badge"></span>
+            </button>
+        </div>
+
+        <!-- Notification Popup -->
+        <div class="notification-popup">
+            <div class="popup-card">
+                <button class="close-popup-button">×</button>
+                <h2>NOTICE</h2>
+                <div class="inner-card">
+                    <p>এই ওয়েবসাইটের মতো আরো অনেক এক্সাম , পিডিএফ ,নোট ,সাজেশন পাবে এই চ্যানেলে  
+                        <a href="https://t.me/sspathshala" class="allow-href" target="_blank" rel="noopener">https://t.me/sspathshala</a>
+                    </p>
+                </div>
+                <div class="inner-card">
+                    <p>টেলিগ্রাম লিংক - <a href="https://t.me/sspathshala" class="allow-href" target="_blank" rel="noopener">https://t.me/sspathshala</a><br>
+                        পিডিএফ চ্যানেল  -<a href="https://t.me/PDF_AREA_SSP" class="allow-href" target="_blank" rel="noopener">https://t.me/PDF_AREA_SSP</a><br>
+                        ইউটিউব ক্লাস - <a href="https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f" class="allow-href" target="_blank" rel="noopener">https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f</a><br>
+                        ফেসবুক লিংক - <a href="https://www.facebook.com/share/g/19zJUTkW3f/" class="allow-href" target="_blank" rel="noopener">https://www.facebook.com/share/g/19zJUTkW3f/</a><br>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Container -->
+        <div class="category-container">
+            <h2>Pick your desired Exam</h2>
+            <div class="categories-wrapper">
+                <div class="category-item" data-category="biology">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Biology</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="bdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="bonu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="bonu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="physics">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Physics</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="pdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="ponu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="ponu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="chemistry">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Chemistry</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="cdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="conu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="conu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="english">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>English</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="engall">All English</div>
+                   
+                    </div>
+                </div>
+                <div class="category-item" data-category="gk">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>General Knowledge</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="gkall">All GK </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="gke">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>General & English</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="gkee">GKE </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="varsity">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Varsity</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="vbiology">Biology</div>
+                        <div class="subcategory-item" data-subcategory="vphysics">Physics</div>
+                        <div class="subcategory-item" data-subcategory="vchemistry">Chemistry</div>
+                        <div class="subcategory-item" data-subcategory="vhm">Higher Math</div>
+                    </div>
+                </div>
+                <div class="category-item" data-category="modeltest">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Model test</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="mtest">Model tests</div>
+                        </div>
+                </div>
+
+                <div class="category-item" data-category="all">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>All Questions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exam Cards -->
+        <div class="exam-list" id="examList"></div>
+    </div>
+
+    <!-- Set Selection Modal -->
+    <div class="set-selection-modal" id="setSelectionModal">
+        <div class="set-selection-content">
+            <div class="modal-header">
+                <h2>Select Your Set</h2>
+                <button class="close-button" id="closeSetModal">&times;</button>
+            </div>
+            <div class="set-grid" id="setGrid">
+                <!-- Set buttons will be added dynamically -->
+            </div>
+            <button class="confirm-button" id="confirmSetButton" disabled>Start Exam</button>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <a href="https://t.me/examwizerd_bot" class="floating-button allow-href" target="_blank" rel="noopener">
+        <img src="../assets/favicon-96x96.png" alt="Link">
+    </a>
+
+    <!-- Floating Menu -->
+    <div class="floating-menu">
+        <button id="floatingDarkMode" data-tooltip="Toggle Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="telegram-section">
+            <div class="telegram-item">
+                <a href="https://t.me/sspathshala" class="telegram-icon allow-href telegram" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <span class="telegram-text">Telegram Updates</span>
+            </div>
+            <div class="telegram-item">
+                <a href="https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f" class="telegram-icon allow-href facebook" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <span class="telegram-text">Youtube Channel</span>
+            </div>
+            <div class="telegram-item">
+                <a href="https://www.facebook.com/share/g/19zJUTkW3f" class="telegram-icon allow-href facebook-group" target="_blank">
+                    <i class="fas fa-users"></i>
+                </a>
+                <span class="telegram-text">Community Group</span>
+            </div>
+            <div class="telegram-item">
+                <a href="mailto:sajjadulislam11@gmail.com" class="telegram-icon allow-href email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <span class="telegram-text">Email Us</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>🎉 Join our growing community! 🎉</p>
+            <p>&copy; 2025 SS PATHSHALA. All rights reserved.</p>
+            <p>Made with ♥️ by z o r o ! 🎉</p>
+            <div class="footer-decor"></div>
+        </div>
+    </div>
+</footer>
+    <!-- External Scripts -->
+    <script src="../js/blocking.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "68d06390181440e19922e1111c9444c6"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
+
+---- EXTERNAL CSS #2 (URL: https://sspathshala.pages.dev/https:/css/set-modal.css) ----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Pathshala-Exam website</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="../assets/favicon-70x70.png" sizes="70x70">
+    <link rel="icon" href="../assets/favicon-96x96.png" sizes="96x96">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/set-modal.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+
+
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="exam-header">
+            <div class="header-card">
+                <h1>SS PATHSHALA</h1>
+                <p>Your academic and admission solution.</p>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" aria-label="Toggle Dark Mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z" class="moon"/>
+                            <circle cx="12" cy="12" r="5" class="sun"/>
+                        </svg>
+                        <span>Toggle Theme</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification System -->
+        <div class="notification-wrapper">
+            <button class="notification-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="notification-icon">
+                    <path d="M18 8c0-3.313-2.687-6-6-6s-6 2.687-6 6v5l-1 2v1h14v-1l-1-2V8z"></path>
+                    <path d="M9 21h6a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2z"></path>
+                </svg>
+                <span class="notification-badge"></span>
+            </button>
+        </div>
+
+        <!-- Notification Popup -->
+        <div class="notification-popup">
+            <div class="popup-card">
+                <button class="close-popup-button">×</button>
+                <h2>NOTICE</h2>
+                <div class="inner-card">
+                    <p>এই ওয়েবসাইটের মতো আরো অনেক এক্সাম , পিডিএফ ,নোট ,সাজেশন পাবে এই চ্যানেলে  
+                        <a href="https://t.me/sspathshala" class="allow-href" target="_blank" rel="noopener">https://t.me/sspathshala</a>
+                    </p>
+                </div>
+                <div class="inner-card">
+                    <p>টেলিগ্রাম লিংক - <a href="https://t.me/sspathshala" class="allow-href" target="_blank" rel="noopener">https://t.me/sspathshala</a><br>
+                        পিডিএফ চ্যানেল  -<a href="https://t.me/PDF_AREA_SSP" class="allow-href" target="_blank" rel="noopener">https://t.me/PDF_AREA_SSP</a><br>
+                        ইউটিউব ক্লাস - <a href="https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f" class="allow-href" target="_blank" rel="noopener">https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f</a><br>
+                        ফেসবুক লিংক - <a href="https://www.facebook.com/share/g/19zJUTkW3f/" class="allow-href" target="_blank" rel="noopener">https://www.facebook.com/share/g/19zJUTkW3f/</a><br>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Container -->
+        <div class="category-container">
+            <h2>Pick your desired Exam</h2>
+            <div class="categories-wrapper">
+                <div class="category-item" data-category="biology">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Biology</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="bdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="bonu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="bonu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="physics">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Physics</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="pdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="ponu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="ponu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="chemistry">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Chemistry</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="cdaganoboi">দাগানো বই </div>
+                        <div class="subcategory-item" data-subcategory="conu1">অনুশীলনী এক্সাম ১</div>
+                        <div class="subcategory-item" data-subcategory="conu2">অনুশীলনী এক্সাম ২</div>
+                    </div>
+                </div>
+                
+                <div class="category-item" data-category="english">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>English</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="engall">All English</div>
+                   
+                    </div>
+                </div>
+                <div class="category-item" data-category="gk">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>General Knowledge</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="gkall">All GK </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="gke">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>General & English</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="gkee">GKE </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="varsity">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Varsity</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="vbiology">Biology</div>
+                        <div class="subcategory-item" data-subcategory="vphysics">Physics</div>
+                        <div class="subcategory-item" data-subcategory="vchemistry">Chemistry</div>
+                        <div class="subcategory-item" data-subcategory="vhm">Higher Math</div>
+                    </div>
+                </div>
+                <div class="category-item" data-category="modeltest">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>Model test</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="subcategories">
+                        <div class="subcategory-item" data-subcategory="mtest">Model tests</div>
+                        </div>
+                </div>
+
+                <div class="category-item" data-category="all">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="subcategory-icon" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </span>
+                        <h3>All Questions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exam Cards -->
+        <div class="exam-list" id="examList"></div>
+    </div>
+
+    <!-- Set Selection Modal -->
+    <div class="set-selection-modal" id="setSelectionModal">
+        <div class="set-selection-content">
+            <div class="modal-header">
+                <h2>Select Your Set</h2>
+                <button class="close-button" id="closeSetModal">&times;</button>
+            </div>
+            <div class="set-grid" id="setGrid">
+                <!-- Set buttons will be added dynamically -->
+            </div>
+            <button class="confirm-button" id="confirmSetButton" disabled>Start Exam</button>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <a href="https://t.me/examwizerd_bot" class="floating-button allow-href" target="_blank" rel="noopener">
+        <img src="../assets/favicon-96x96.png" alt="Link">
+    </a>
+
+    <!-- Floating Menu -->
+    <div class="floating-menu">
+        <button id="floatingDarkMode" data-tooltip="Toggle Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="telegram-section">
+            <div class="telegram-item">
+                <a href="https://t.me/sspathshala" class="telegram-icon allow-href telegram" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <span class="telegram-text">Telegram Updates</span>
+            </div>
+            <div class="telegram-item">
+                <a href="https://youtube.com/@ss_pathshala008?si=RqTpUi3QaHyZ-Z8f" class="telegram-icon allow-href facebook" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <span class="telegram-text">Youtube Channel</span>
+            </div>
+            <div class="telegram-item">
+                <a href="https://www.facebook.com/share/g/19zJUTkW3f" class="telegram-icon allow-href facebook-group" target="_blank">
+                    <i class="fas fa-users"></i>
+                </a>
+                <span class="telegram-text">Community Group</span>
+            </div>
+            <div class="telegram-item">
+                <a href="mailto:sajjadulislam11@gmail.com" class="telegram-icon allow-href email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <span class="telegram-text">Email Us</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>🎉 Join our growing community! 🎉</p>
+            <p>&copy; 2025 SS PATHSHALA. All rights reserved.</p>
+            <p>Made with ♥️ by z o r o ! 🎉</p>
+            <div class="footer-decor"></div>
+        </div>
+    </div>
+</footer>
+    <!-- External Scripts -->
+    <script src="../js/blocking.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "68d06390181440e19922e1111c9444c6"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
+
